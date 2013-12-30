@@ -1,0 +1,13 @@
+<div>
+  <h1>Total Number of Inquiries: <%= @inquiries.count %></h1>
+</div>
+<br>
+<div class='row'>
+  <% @inquiries.each do |inquiry| %>
+    <ul class='pricing-table'>
+      <li class='price'><%= "Inquirer: #{inquiry.first_name} #{inquiry.last_name}"%></li.title>
+      <li class='description'><%= "Subject: #{inquiry.subject}"%></li>
+      <li class='bullet-item'><%="Description: #{inquiry.description}"%></li>
+    </ul>
+  <% end %>
+</div>

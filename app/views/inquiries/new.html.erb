@@ -1,0 +1,40 @@
+<div class='row'>
+  <h1>All Inquiries</h1>
+</div>
+
+<div class='row'>
+
+  <%= form_for(@inquiry) do |f| %>
+
+    <div>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+    </div>
+
+    <div>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+    </div>
+
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+
+    <div>
+      <%= f.label :subject %>
+      <%= f.text_field :subject %>
+    </div>
+
+    <div>
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
+
+    <div>
+      <%= f.submit class: "button [radius round]" %>
+    </div>
+
+  <% end %>
+
+</div>

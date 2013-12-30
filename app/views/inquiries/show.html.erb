@@ -1,0 +1,23 @@
+<div class='row'>
+  <h1>Inquiry Subject: </h1>
+  <h4><%= @inquiry.subject %><h4>
+</div>
+<br>
+
+<div class='row'>
+  <h1>Name of Inquirer: </h1>
+  <h4><%= "#{@inquiry.first_name}  #{@inquiry.last_name}" %><h4>
+</div>
+<br>
+
+<div class='row'>
+  <h1>Email: </h1>
+  <h4><%= "#{@inquiry.email}" %><h4>
+</div>
+<br>
+
+<div class='row'>
+  <h1>Description: </h1>
+  <p><%= "#{@inquiry.description}" %><p>
+</div>
+<br>

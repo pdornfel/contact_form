@@ -24,7 +24,7 @@ feature "User visits the inquiries page", %q{
         fill_in "Description", with: "foo bar baz"
         click_on "Create Inquiry"
 
-        expect(page).to have_content("Inquiry was successfully created")
+        expect(page).to have_content("Inquiry created successfully")
     end
   end
 

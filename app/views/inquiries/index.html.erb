@@ -8,6 +8,7 @@
       <li class='price'><%= "Inquirer: #{inquiry.first_name} #{inquiry.last_name}"%></li.title>
       <li class='description'><%= "Subject: #{inquiry.subject}"%></li>
       <li class='bullet-item'><%="Description: #{inquiry.description}"%></li>
+      <li class="cta-button"><%= link_to "Delete", inquiry_path(inquiry), method: :delete, class: 'button [secondary alert success]' %></li>
     </ul>
   <% end %>
 </div>

@@ -12,6 +12,12 @@ class InquiriesController < ApplicationController
   def show
   end
 
+  def destroy
+    @inquiry.destroy
+    flash["alert-box"] = "Inquiry Deleted"
+    redirect_to inquiries_path
+  end
+
   def create
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save

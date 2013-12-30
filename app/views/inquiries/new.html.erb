@@ -6,6 +6,18 @@
 
   <%= form_for(@inquiry) do |f| %>
 
+  <% if @inquiry.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@inquiry.errors.count, "error") %> prohibited this post from being saved:</h2>
+    <ul>
+    <% @inquiry.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+
+  <% end %>
+
     <div>
       <%= f.label :first_name %>
       <%= f.text_field :first_name %>
